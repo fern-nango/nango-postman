@@ -1,0 +1,79 @@
+{
+  "info": {
+    "name": "api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "origin",
+      "value": "http://localhost:8080",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "SyncService",
+      "item": [
+        {
+          "name": "add",
+          "request": {
+            "url": {
+              "raw": "{{origin}}/v1/syncs",
+              "host": [
+                "{{origin}}"
+              ],
+              "path": [
+                "v1",
+                "syncs"
+              ],
+              "query": []
+            },
+            "header": [],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"base_url\": \"example\",\n  \"method\": \"GET\",\n  \"headers\": {\n    \"example\": \"UNKNOWN\"\n  },\n  \"body\": \"UNKNOWN\",\n  \"query_params\": {\n    \"example\": \"UNKNOWN\"\n  },\n  \"unique_key\": \"example\",\n  \"response_path\": \"example\",\n  \"paging_cursor_request_path\": \"example\",\n  \"paging_cursor_metadata_response_path\": \"example\",\n  \"paging_cursor_object_response_path\": \"example\",\n  \"paging_url_path\": \"example\",\n  \"paging_header_link_rel\": \"example\",\n  \"auto_mapping\": true,\n  \"mapped_table\": \"example\",\n  \"frequency\": 0,\n  \"pizzly_connection_id\": \"example\",\n  \"pizzly_provider_config_key\": \"example\",\n  \"max_total\": 0,\n  \"friendly_name\": \"example\",\n  \"metadata\": {\n    \"example\": \"UNKNOWN\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "name": "Successful add",
+              "code": 200,
+              "originalRequest": {
+                "url": {
+                  "raw": "{{origin}}/v1/syncs",
+                  "host": [
+                    "{{origin}}"
+                  ],
+                  "path": [
+                    "v1",
+                    "syncs"
+                  ],
+                  "query": []
+                },
+                "header": [],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"base_url\": \"example\",\n  \"method\": \"GET\",\n  \"headers\": {\n    \"example\": \"UNKNOWN\"\n  },\n  \"body\": \"UNKNOWN\",\n  \"query_params\": {\n    \"example\": \"UNKNOWN\"\n  },\n  \"unique_key\": \"example\",\n  \"response_path\": \"example\",\n  \"paging_cursor_request_path\": \"example\",\n  \"paging_cursor_metadata_response_path\": \"example\",\n  \"paging_cursor_object_response_path\": \"example\",\n  \"paging_url_path\": \"example\",\n  \"paging_header_link_rel\": \"example\",\n  \"auto_mapping\": true,\n  \"mapped_table\": \"example\",\n  \"frequency\": 0,\n  \"pizzly_connection_id\": \"example\",\n  \"pizzly_provider_config_key\": \"example\",\n  \"max_total\": 0,\n  \"friendly_name\": \"example\",\n  \"metadata\": {\n    \"example\": \"UNKNOWN\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "body": "",
+              "_postman_previewlanguage": "json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
